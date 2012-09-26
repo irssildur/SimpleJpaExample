@@ -1,6 +1,18 @@
 package domain;
 
 public class Child {
+
+    public Child() {
+        super();
+    }
+
+    public Child(String name, Address address, SchoolClass schoolClass) {
+        super();
+        this.name = name;
+        this.address = address;
+        this.schoolClass = schoolClass;
+    }
+
     private String name;
     private Address address;
     private SchoolClass schoolClass;
