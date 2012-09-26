@@ -4,6 +4,9 @@ import java.util.List;
 
 public class SchoolClass {
 
+    private long id;
+    private List<Child> children;
+    
     public SchoolClass() {
         super();
     }
@@ -12,8 +15,6 @@ public class SchoolClass {
         super();
         this.children = children;
     }
-
-    private List<Child> children;
 
     public List<Child> getPersons() {
         return children;

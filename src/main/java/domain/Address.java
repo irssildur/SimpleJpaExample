@@ -2,6 +2,10 @@ package domain;
 
 public class Address {
 
+    private long id;
+    public String city;
+    public String street;
+    
     public Address() {
         super();
     }
@@ -11,9 +15,6 @@ public class Address {
         this.city = city;
         this.street = street;
     }
-
-    public String city;
-    public String street;
 
     public String getCity() {
         return city;
