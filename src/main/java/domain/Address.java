@@ -47,5 +47,10 @@ public class Address {
         this.id = id;
     }
 
+    @Override
+    public String toString() {
+        return "Address [id=" + id + ", city=" + city + ", street=" + street + "]";
+    }
+
     
 }

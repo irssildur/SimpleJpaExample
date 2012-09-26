@@ -40,6 +40,11 @@ public class SchoolClass {
     public void setChildren(List<Child> children) {
         this.children = children;
     }
+
+    @Override
+    public String toString() {
+        return "SchoolClass [id=" + id + ", children=" + children + "]";
+    }
     
     
 

@@ -62,5 +62,10 @@ public class Child {
         this.schoolClass = schoolClass;
     }
 
+    @Override
+    public String toString() {
+        return "Child [id=" + id + ", name=" + name + ", address=" + address + ", schoolClass=" + schoolClass + "]";
+    }
+
     
 }
