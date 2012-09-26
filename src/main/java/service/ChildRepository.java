@@ -10,7 +10,7 @@ public interface ChildRepository {
 
     public abstract List<Child> listAllChildren();
 
-    public abstract Child getChildById();
+    public abstract  Child getChildById(long id);
 
     public abstract List<SchoolClass> listAllSchoolClass();
 
@@ -19,5 +19,7 @@ public interface ChildRepository {
     public abstract void createChild(Child child);
 
     public abstract void createSchoolClass(SchoolClass schoolClass);
+
+   
 
 }
