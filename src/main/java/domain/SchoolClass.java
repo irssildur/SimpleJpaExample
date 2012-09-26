@@ -16,12 +16,22 @@ public class SchoolClass {
         this.children = children;
     }
 
-    public List<Child> getPersons() {
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public List<Child> getChildren() {
         return children;
     }
 
-    public void setPersons(List<Child> persons) {
-        this.children = persons;
+    public void setChildren(List<Child> children) {
+        this.children = children;
     }
+    
+    
 
 }

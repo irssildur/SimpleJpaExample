@@ -18,14 +18,6 @@ public class Child {
         this.schoolClass = schoolClass;
     }
 
-    public SchoolClass getGroup() {
-        return schoolClass;
-    }
-
-    public void setGroup(SchoolClass group) {
-        this.schoolClass = group;
-    }
-
     public String getName() {
         return name;
     }
@@ -42,4 +34,21 @@ public class Child {
         this.address = address;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public SchoolClass getSchoolClass() {
+        return schoolClass;
+    }
+
+    public void setSchoolClass(SchoolClass schoolClass) {
+        this.schoolClass = schoolClass;
+    }
+
+    
 }
