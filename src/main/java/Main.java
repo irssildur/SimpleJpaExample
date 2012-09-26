@@ -27,11 +27,19 @@ public class Main {
         ChildRepository repo = new JpaBasedChildRepository(manager);
 
         createSchoolClassTest(repo);
-        
         listSchoolClassTest(repo);
         
+        listAllChildrenTest(repo);
         
         
+        
+        
+    }
+
+    private static void listAllChildrenTest(ChildRepository repo) {
+        for (Child child : repo.listAllChildren()) {
+            child.toString();
+        }
     }
 
     private static void listSchoolClassTest(ChildRepository repo) {
