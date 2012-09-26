@@ -2,9 +2,18 @@ package domain;
 
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
 public class SchoolClass {
 
+    @GeneratedValue
+    @Id
     private long id;
+    @OneToMany(mappedBy="schoolClass")
     private List<Child> children;
     
     public SchoolClass() {

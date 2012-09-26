@@ -1,10 +1,22 @@
 package domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+
+@Entity
 public class Child {
     
+    @GeneratedValue
+    @Id
     private long id;
     private String name;
+    
+    @OneToOne
     private Address address;
+    @ManyToOne
     private SchoolClass schoolClass;
     
     public Child() {
