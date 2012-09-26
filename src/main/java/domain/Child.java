@@ -64,7 +64,7 @@ public class Child {
 
     @Override
     public String toString() {
-        return "Child [id=" + id + ", name=" + name + ", address=" + address + ", schoolClass=" + schoolClass + "]";
+        return "Child [id=" + id + ", name=" + name + ", address=" + address + "]";
     }
 
     
